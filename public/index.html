@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Glass morphism</title>
+</head>
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="container">
+            <form method="post" action="/create">
+                <h1>Create user</h1>
+                <form class="input-form" id="registerForm">
+                    <input type="text" id="name" placeholder="Name" name="username" class="id" required>
+                    <input type="email" placeholder="Email id" class="id" id="email" name="email" required>
+                    <input type="password" placeholder="password" class="id" id="password" name="password" required minlength="8">
+                    <input type="number" placeholder="age" class="id" name="age" required>
+                    <button class="submit" type="submit" value="Create User" id="submitBtn">Create user</button>
+                    <footer>Already have an account?&nbsp;<a href="/login"><strong>Login</strong></a></footer>
+                </form>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
